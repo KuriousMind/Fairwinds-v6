@@ -1,65 +1,71 @@
 body {
-    margin: 0;
-    background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
-    display: flex;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  background-color: #F5E6D3; /* Warm background from the tech stack */
+  display: flex;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.landing-container {
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  max-width: 90%;
+  width: 600px;
+}
+
+.logo-container {
+  margin-bottom: 2rem;
+}
+
+.title {
+  color: #2B6CB0; /* Primary Blue from the tech stack */
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #1D3557; /* Text Navy from the tech stack */
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.coming-soon {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #E76F51; /* Accent Orange from the tech stack */
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.coming-soon p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2.5rem;
   }
   
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  .subtitle {
+    font-size: 1rem;
   }
   
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    color: white;
+  .landing-container {
+    padding: 1.5rem;
   }
-  button:hover {
-    border-color: #646cff;
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
-  
-  ul {
-    padding-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin: 8px 0;
-    border: 1px solid black;
-    gap: 1px;
-    background-color: black;
-    border-radius: 8px;
-    overflow: auto;
-  }
-  
-  li {
-    background-color: white;
-    padding: 8px;
-  }
-  
-  li:hover {
-    background: #dadbf9;
-  }
-  
-  a {
-    font-weight: 800;
-    text-decoration: none;
-  }
+}
